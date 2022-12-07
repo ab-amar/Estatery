@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+/* Header */
+.nav-item{
+    margin-left: 40px;
+    color: black;
+    cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo{
+    height: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.title{
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.login{
+    position: absolute;
+    bottom: 15px;
+    right:130px;
+    padding: 6px 16px;
+    border: 1px solid rgb(28, 28, 30);
+    color: black;
+}
+.login:hover{
+    border: 1px solid rgb(28, 28, 30);
+    background-color: rgb(245, 245, 245);
+}
+.signup{
+    position: absolute;
+    right:20px;
+    bottom: 16px;
+    padding: 6px 16px;
+    border: 1px solid rgb(28, 28, 30);
+    background-color:  rgb(47, 46, 46);
+}
+.signup:hover{
+    background-color:rgb(27, 26, 26);
+}
+@media only screen and (max-width:992px) {
+    .userButtons{
+        display: none;
+    }  
+}
+
+/* Property Card */
+.property_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.property{
+    width: 21%;
+    height: 460px;
+    margin: 2%;
+    padding: 0.5%;
+}
+.card_img{
+    height: 180px;
+}
+.card_content{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width:992px) and (min-width:768px) {
+    .property{
+        width: 27%;
+        margin: 2%;
+        padding: 0.5%;
+    }  
+}
+@media only screen and (max-width:768px) and (min-width:576px) {
+    .property{
+        width: 40%;
+        margin: 2%;
+        padding: 0.5%;
+    }  
+}
+@media only screen and (max-width:576px) {
+.property{
+    width: 60%;
+    margin: 2%;
+    padding: 0.5%;
+}  
+}
+
+.detail_icon{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8px;
+    align-items: center;
+}
+
+.icon{
+    height: 1rem;
+    margin-left: -10px;
+    color: rgb(6, 95, 184);
+}
+/* Filter */
+.filter_container{
+    margin: 20px 95px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .filter_list{
+    list-style: none;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .list_item{
+    padding-right: 20px;
+    margin: 0px 16px;
+    font-size: medium;
+    cursor: pointer;
+    align-items: center;
+    
   }
+@media only screen and (max-width:768px) {
+    .filter_list{
+        flex-wrap: wrap;
+    }  
+}
+.css-1869usk-MuiFormControl-root{
+    margin-top: 0;
+}
+
+/* Footer */
+.Footer {
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    margin: 20px;
+}
+  
+.Footer p {
+    margin: 20px;
+    color: #ccc;
 }
